@@ -1,0 +1,295 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-color: #363636;
+  font-family: 'Biryani';
+}
+
+
+body{
+  background-color: #F5F5F5;
+}
+
+
+#nav-bar {
+
+  height: 100vh;
+  width: 75px;
+  background-color: white;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.logo {
+  width:60px;
+  margin: 12px 4px 300px 4px;
+}
+
+.nav-icons {
+    width:40px;
+    height:45px;
+    margin-left: 15px;
+    }
+
+#icon-1  {
+  margin-bottom: 15px;
+}
+
+#icon-2 {
+  margin-bottom: 15px;
+}
+
+.column-one{
+  width: 45%;
+  margin-left: 75px;
+  top: 0;
+  display: relative;
+}
+
+.introduction {
+  float: left;
+  margin-left: 30px;
+  margin-top: 28px;
+  margin-bottom: 20px;
+  }
+
+
+.welcome-banner {
+  background-image: linear-gradient(to right, #8ED1DC, #E3F4F6);
+  height: 110px;
+  padding-left: 40px;
+  padding-right: 0px;
+  padding-top: 33px;
+  width: 619px;
+  float: left;
+  margin-left: 30px;
+  margin-bottom: 15px;
+  position: relative;
+  }
+
+
+  button {
+  background-color: #1CA3BA;
+  border-radius: 17px;
+  color: white;
+  float: right;
+  padding: 5px;
+  width: 200px;
+  font-size: 13px;
+  font-weight: bold;
+  height: 32px;
+}
+
+.button-container{
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  float: right;
+  width: 15px;
+  height: 15px;
+  }
+
+  .close-banner{
+    height: 11px;
+    width: 11px;
+  }
+
+
+
+.general-finances {
+  float: left;
+  margin-top: 15px;
+  margin-left: 30px;
+
+
+}
+
+.general-finances section {
+  border: none;
+  height: 100px;
+  display: inline-block;
+}
+
+.income,
+.expenses,
+.credit-score {
+  display: inline-block;
+  width: 190px;
+  background-color: white;
+  padding-top: 13px;
+  padding-left: 13px;
+
+}
+
+.income,
+.expenses {
+   margin-right:20px
+
+}
+
+.general-finances h3{
+  font-size: 12px;
+
+}
+
+.general-finances p {
+  font-size: 26px;
+}
+
+.accounts {
+  float: left;
+  margin-top: 25px;
+  margin-left: 30px;
+  height:500px;
+  width: 619px;
+}
+
+.account-header{
+   position: relative;
+   background-color: #F5F5F5;
+   margin-bottom: 10px;
+}
+
+.account-header h4 {
+    font-size: 25px;
+}
+
+.accounts-button {
+  position: absolute;
+  top: 5px;
+  right: 0px;
+}
+
+.savings{
+  height: 78px;
+  width: 643px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.savings-icon,
+.checking-icon,
+.credit-icon-1,
+.credit-icon-2 {
+  height: 30px;
+  width:40px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.checking {
+  height: 78px;
+  width: 643px;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.checking-account-bank,
+.savings-account-bank,
+.credit-card-1,
+.credit-card-2 {
+   font-size: 20px;
+   margin-left: 85px;
+}
+
+.checking-account {
+ font-size: 20px;
+ margin-left: 190px;
+}
+
+.savings-account {
+  font-size: 20px;
+  margin-left: 190px;
+}
+
+.credit-account-1 {
+  font-size: 20px;
+  margin-left: 161px;
+}
+
+.credit-account-2 {
+  font-size: 20px;
+  margin-left: 135px;
+}
+
+.credit-1 {
+   height: 78px;
+   width: 643px;
+   background-color: white;
+   margin-bottom: 20px;
+
+}
+
+.credit-2 {
+ height: 78px;
+ width: 643px;
+ background-color: white;
+ height: 75px;
+
+}
+
+#table-container {
+  width: 600px;
+  height: 650px;
+  padding: 20px 20px 20px 30px;
+  background-color: white;
+  position: absolute;
+  top: 107px;
+  right: 30px;
+
+
+
+}
+
+.table-header {
+  width: 400px;
+  padding: 10px;
+  background-color: white;
+  border: none;
+  font-size: 22px;
+}
+
+.transactions-button {
+  background-color: #1CA3BA;
+  border-radius: 17px;
+  color: white;
+  float: right;
+  padding: 5px;
+  width: 200px;
+  font-size: 13px;
+  font-weight: bold;
+  height: 32px;
+  top: 30px;
+  right: 50px;
+  position: absolute;
+}
+
+table {
+  border-collapse: collapse;
+  padding: 12px;
+  width: 530px;
+  height: 540px
+}
+
+th,
+td {
+  text-align: left;
+  padding: 12px;
+}
+
+.table-items {
+    border: none;
+  }
+
+tr {
+  border-width: 2px 0;
+  border-style: solid;
+  border-color: #CCCCCC;
+  
+}
