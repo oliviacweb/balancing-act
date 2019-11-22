@@ -271,10 +271,10 @@ body{
 }
 
 table {
-  border-collapse: collapse;
   padding: 12px;
   width: 530px;
-  height: 540px
+  height: 540px;
+  border-collapse: collapse;
 }
 
 th,
@@ -286,10 +286,24 @@ td {
 .table-items {
     border: none;
   }
+td {
+  border-bottom: solid 2px;
+  /*border-style: solid;*/
+  border-color: #CCCCCC;
 
-tr {
-  border-width: 2px 0;
+
+
+}
+
+/* tr {
+  border-bottom: 2px;
   border-style: solid;
   border-color: #CCCCCC;
-  
+  border-collapse: collapse;*/
+
 }
+
+tr:first-of-type {
+  border: none;
+
+ }
