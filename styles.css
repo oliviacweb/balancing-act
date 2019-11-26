@@ -28,19 +28,73 @@ body{
   margin: 12px 4px 300px 4px;
 }
 
-.nav-icons {
-    width:40px;
+/*nav-icons {
+    /*width:40px;
     height:45px;
-    margin-left: 15px;
+    margin-left: 15px;*/
+/*background-color: white
+  } */
+
+
+
+
+.dashboard-icon .icon-1
+       {
+
+     width: 40px;
+     height: 45px;
+     margin-left: 15px;
+     background-color: white;
+
+}
+
+.dashboard-icon {
+      background-color: white;
+      border-style: none;
+      /*border-left: 3px solid #1CA3BA;*/
+      outline: none;
+
+}
+
+.transactions-icon .icon-2
+
+    {
+      width: 40px;
+      height: 45px;
+      margin-left: 15px;
+      background-color: white;
+
     }
+.transactions-icon {
+  border-style: none;
+  outline: none;
+}
 
-#icon-1  {
+.profile-icon .icon-3  {
+  width: 40px;
+  height: 45px;
+  margin-left: 15px;
+  background-color: white;
+
+}
+
+.profile-icon {
+    border-style: none;
+    outline: none;
+}
+
+
+.icon-border-left {
+   border-left: 3px solid #1CA3BA;
+}
+
+/*.icon-1  {
   margin-bottom: 15px;
 }
 
-#icon-2 {
+.icon-2 {
   margin-bottom: 15px;
-}
+}*/
 
 .column-one{
   width: 45%;
@@ -71,7 +125,7 @@ body{
   }
 
 
-  button {
+  .accounts-button {
   background-color: #1CA3BA;
   border-radius: 17px;
   color: white;
