@@ -11,25 +11,6 @@ function disappearBanner() {
 };
 
 
-//var icon = document.querySelector('.frg')
-
-//function toggleActiveIcon () {
-    //icon.setAttribute('class', 'nameofclass')
-     //blue border appears on left side
-
-
-//}
-
-//var icon = document.//
-
-
-
-//function addBorder() {
-   //var transIcon = document.getElementByClass("transactions-icon");
-   //element.classList.toggle("icon-border-left");
-//}
-
-
 var dashboardIcon = document.querySelector('.dashboard-icon');
 var transactionsIcon = document.querySelector('.transactions-icon');
 var profileIcon = document.querySelector('.profile-icon');
@@ -46,7 +27,170 @@ function addBlueBorderTransactions() {
 
 function showTransactionsPage() {
 
-  pageContent.innerHTML = `<p>Transactions shit</p>`;
+  pageContent.innerHTML = `
+<section class="transactions-content">
+
+ <div class="transactions-colum-1">
+  <section class="transactions-header">
+   <h1 class="transactions-intro">Transactions</h1>
+
+   <section class="transaction-tabs">
+    <button class="all">ALL</button>
+    <button class="inflow">INFLOW</button>
+    <button class="outflow">OUTFLOW</button>
+   </section>
+  </section>
+
+ <section class="trans-table-section">
+  <table class="trans-table">
+   <tr class="trans-table-items">
+     <th>Date</th>
+     <th>Account</th>
+     <th>Payee</th>
+     <th>Inflow</th>
+     <th>Outflow</th>
+   </tr>
+   <tr class="trans-first-table-line">
+     <td>10-25-19</td>
+     <td>Credit Card</td>
+     <td>Target</td>
+     <td>-</td>
+     <td>$82.35</td>
+   </tr>
+   <tr>
+     <td>10-24-19</td>
+     <td>Credit Card</td>
+     <td>Express</td>
+     <td>-</td>
+     <td>$212.24</td>
+   </tr>
+   <tr>
+     <td>10-22-19</td>
+     <td>Checking</td>
+     <td>Paycheck</td>
+     <td>$1,319.12</td>
+     <td>-</td>
+   </tr>
+   <tr>
+     <td>10-21-19</td>
+     <td>Credit Card</td>
+     <td>Trader Joe's</td>
+     <td>-</td>
+     <td>$54.92</td>
+   </tr>
+   <tr>
+     <td>10-20-19</td>
+     <td>Credit Card</td>
+     <td>Shell</td>
+     <td>-</td>
+     <td>$46.23</td>
+   </tr>
+   <tr>
+     <td>10-19-19</td>
+     <td>Savings</td>
+     <td>Rent</td>
+     <td>$800.00</td>
+     <td>-</td>
+   </tr>
+   <tr>
+     <td>10-19-19</td>
+     <td>Checking</td>
+     <td>Hapa Sushi</td>
+     <td>-</td>
+     <td>$13.97</td>
+   </tr>
+   <tr>
+     <td>10-18-19</td>
+     <td>Credit Card</td>
+     <td>Pig Train</td>
+     <td>-</td>
+     <td>$4.83</td>
+   </tr>
+   <tr>
+     <td>10-18-19</td>
+     <td>Checking</td>
+     <td>RTD</td>
+     <td>-</td>
+     <td>$6.00</td>
+   </tr>
+   <tr>
+    <td>10-24-19</td>
+    <td>Checking</td>
+    <td>Express</td>
+    <td>-</td>
+    <td>$212.24</td>
+   </tr>
+   <tr>
+    <td>10-24-19</td>
+    <td>Checking</td>
+    <td>Express</td>
+    <td>-</td>
+    <td>$212.24</td>
+   </tr>
+   <tr>
+    <td>10-24-19</td>
+    <td>Checking</td>
+    <td>Express</td>
+    <td>-</td>
+    <td>$212.24</td>
+   </tr>
+   <tr>
+    <td>10-24-19</td>
+    <td>Checking</td>
+    <td>Express</td>
+    <td>-</td>
+    <td>$212.24</td>
+   </tr>
+   <tr>
+    <td>10-24-19</td>
+    <td>Checking</td>
+    <td>Express</td>
+    <td>-</td>
+    <td>$212.24</td>
+   </tr>
+  </table>
+ </section>
+</div>
+<div class="trans-colum-2">
+ <section class="new-trans-box">
+ <h2 class="trans-box-header">New Transaction</h2>
+ <form class="trans-form">
+  <p>Type of Transaction:</p>
+    <select name="transaction-types">
+     <option value="outflow-form">Expense</option>
+     <option value="inflow-form">Deposit</option>
+    </select>
+  <p>Category:</p>
+    <select name="account-type">
+      <option value="checking">Checking</option>
+      <option value="savings">Savings</option>
+      <option value="credit-card">Credit Card</option>
+    </select>
+  <p>Account from:</p>
+    <select name="account">
+      <option value="checking">Checking</option>
+      <option value="savings">Savings</option>
+      <option value="credit-card">Credit Card</option>
+    </select>
+  <p>Payee:</p>
+    <input type="text"></input>
+  <p>Outflow:</p>
+    <input type="text"></input>
+  <p>Inflow:</p>
+    <input type="text"></input>
+
+  <button class="expense-button">Log Expense</button>
+      </form>
+
+
+ </section>
+
+
+</div>
+
+
+</section>
+  `;
 
 
 }
@@ -204,8 +348,7 @@ function showDashboardPage() {
        </tr>
      </table>
      </section>
-   </div>
- </section>`
+  </section>`
 
 }
 
@@ -215,8 +358,12 @@ function addBlueBorderProfile() {
   transactionsIcon.classList.remove('icon-border-left');
   dashboardIcon.classList.remove('icon-border-left');
   profileIcon.classList.add('icon-border-left');
-
+  showProfilePage();
 };
+
+function showProfilePage() {
+   pageContent.innerHTML = '<p>profile</p>'
+ }
 //$(".nav-icons>button").on("click",function(){
   //$(".nav-icons>button").removeClass("icon-border-left");
   //$(this).addClass("icon-border-left");
